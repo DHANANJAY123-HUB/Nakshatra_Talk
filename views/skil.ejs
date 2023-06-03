@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from adminbsb-sensitive.firebaseapp.com/pages/examples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 09:50:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>skills</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../assets/plugins/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Animate.css Css -->
+    <link href="../../assets/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Font Awesome Css -->
+    <link href="../../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- iCheck Css -->
+    <link href="../../assets/plugins/iCheck/skins/flat/_all.css" rel="stylesheet" />
+
+    <!-- Switchery Css -->
+    <link href="../../assets/plugins/switchery/dist/switchery.css" rel="stylesheet" />
+
+    <!-- Metis Menu Css -->
+    <link href="../../assets/plugins/metisMenu/dist/metisMenu.css" rel="stylesheet" />
+
+    <!-- Pace Loader Css -->
+    <link href="../../assets/plugins/pace/themes/white/pace-theme-flash.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../assets/css/themes/allthemes.css" rel="stylesheet" />
+
+    <!-- Demo Purpose Only -->
+    <link href="../../assets/css/demo/setting-box.css" rel="stylesheet" />
+    <style type="text/css">
+       .circle {
+                margin: 2rem auto 0 auto;
+                position: relative;
+                display: flex;
+                text-align: center;
+                width: 100%;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+        .b {
+                border-bottom: 2px solid grey;
+                width: 100px;
+                margin: 0 5px 7px 5px;
+            }
+    </style>
+
+</head>
+<body style="background-color: #ADFF2F;">
+<!-- <body style="background: rgb(222,237,71);
+background: linear-gradient(90deg, rgba(222,237,71,1) 33%, rgba(0,212,255,1) 100%);"> -->
+<!-- <div class="container"> -->
+<div class="circle">
+    <span class="badge" style="border-radius: 100%; background-color: purple;">1</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%;">2</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%;">3</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%;">4</span>
+</div>
+ <div class="panel panel-default" style="margin-top: 30px;">
+                    <div class="panel-heading">
+                       
+                    </div>
+ <div class="container">
+    <form class="form-horizontal" id="skil" method="post" enctype="multipart/form-data" action="/expert/skil/<%=result._id%>" class="card-body" tabindex="500">
+                           
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    
+
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="col-sm-4"></div>
+                                    <div class="col-sm-4">
+                                    <div class="fallback">
+                            <input name="profile_pic" type="file" multiple />
+                            </div>
+                                  <!--  <button type="button" class="btn btn-default"><i class="fa fa-edit"></i> Change Profile </button> -->
+
+                                   </div>
+                                   <div class="col-sm-4"></div>
+                            </div>
+                             <div class="col-sm-4">
+                                   
+                            </div>
+                        </div>
+
+                            <div class="form-group">
+                                
+                            </div>
+                            <div class="form-group">
+                               
+                            </div>
+                             
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                     <label><b>Gender</b></label>
+                                   <select class="form-control" name="gender">
+                                        <option >-- Please select Gender --</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                         <option value="other">other</option>
+                                        
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                     <label><b>DATE</b></label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                        <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy','placeholder':'__/__/____'" placeholder="05/11/2016" name = "dob">
+                                    </div>
+                                </div>
+                                 <div class="col-sm-4">
+                                    <label><b>Total Experiance</b></label>
+                                    <input type="text" class="form-control" placeholder="3" name = "total_experiance"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label><b>Primary Skills<b></label>
+                                    
+                                    <select class="form-control" multiple="multiple" name = "primary_skill">
+                                        
+                                        <option>Vedi</option>
+                                        <option>Nadi</option>
+                                        <option>Numerology</option>
+                                        <option>Vastu</option>
+                                        <option>Prashana</option>
+                                        <option>KP</option>
+                                        <option>LalKitab</option>
+                                        <option>Tarot</option>
+                                        </select>
+                                
+                                </div>
+                                <div class="col-sm-4">
+                                    
+                                    <label><b>All Skills<b></label>
+                                    
+                                    <select class="form-control" multiple="multiple" name="all_skill">
+                                        
+                                         <option>Vedi</option>
+                                         <option>Nadi</option>
+                                        <option>Numerology</option>
+                                        <option>Vastu</option>
+                                        <option>Prashana</option>
+                                        <option>KP</option>
+                                        <option>LalKitab</option>
+                                        <option>Tarot</option>
+                                        </select>
+                                
+                                
+                                </div>
+                                <div class="col-sm-4">
+                                    
+                                    <label><b>Language<b></label>
+                                    
+                                    <select class="form-control" multiple="multiple" name="language">
+                                        
+                                         <option>Hindi</option>
+                                         <option>English</option>
+                                         <option>Marthi</option>
+                                         <option>Tamil</option>
+                                         <option>Gujrati</option>
+                                         <option>Punjabi</option>
+                                        
+                                        </select>
+                                
+                                
+                                </div>
+                               
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label><b>How many hours you can contribute daily?</b></label>
+                                    <input type="text" class="form-control" placeholder="9" name = "hours_contribute"/>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>Where Did you hear about Nakshtratalk?</b></label>
+                                    <input type="text" class="form-control" placeholder="YouTube,FaceBook" name="hear_about" />
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>Are you working on any other online platform? </b></label>
+                                    <div style="margin-top: 10px;">
+                                    <input type="radio" id="online_platform" name="online_platform" value="yes"> Yes
+                                     <input type="radio" id="online_platform" name="online_platform" value="no"> No
+                                     </div>
+                                </div>
+                                
+                               
+                                
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    
+                                </div>
+                                <div class="col-sm-4">
+                                   <div>
+                                  <!--  <button onclick="location.href = 'otherskill.html';"
+                                        class="btn btn-success btn-block btn-flat" style="border-radius: 20px;">Next</button> -->
+                                        
+                              <button type="submit" class="btn btn-primary btn-block btn-flat" style="border-radius: 20px; "><a  target="" style="color: white;" value = "skil"> Next</button> </a>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    
+                                </div>
+                                
+                               
+                                
+                            </div>
+                        </form>
+
+                        </div>
+
+                    </div>
+
+    <!-- Jquery Core Js -->
+    <!-- <script src="../../assets/plugins/jquery/dist/jquery.min.js"></script> -->
+
+    <!-- Bootstrap Core Js -->
+    <script src="../../assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Pace Loader Js -->
+    <script src="../../assets/plugins/pace/pace.js"></script>
+
+    <!-- Screenfull Js -->
+    <script src="../../assets/plugins/screenfull/src/screenfull.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="../../assets/plugins/metisMenu/dist/metisMenu.js"></script>
+
+    <!-- Jquery Slimscroll Js -->
+    <script src="../../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Switchery Js -->
+    <script src="../../assets/plugins/switchery/dist/switchery.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../assets/js/admin.js"></script>
+    <script src="../../assets/js/pages/examples/blank-page.js"></script>
+
+    <!-- Google Analytics Code -->
+    <script src="../../assets/js/google-analytics.js"></script>
+
+    <!-- Demo Purpose Only -->
+    <script src="../../assets/js/demo.js"></script>
+</body>
+
+<!-- Mirrored from adminbsb-sensitive.firebaseapp.com/pages/examples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 09:50:30 GMT -->
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from adminbsb-sensitive.firebaseapp.com/pages/examples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 09:50:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>skills</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../assets/plugins/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Animate.css Css -->
+    <link href="../../assets/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Font Awesome Css -->
+    <link href="../../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- iCheck Css -->
+    <link href="../../assets/plugins/iCheck/skins/flat/_all.css" rel="stylesheet" />
+
+    <!-- Switchery Css -->
+    <link href="../../assets/plugins/switchery/dist/switchery.css" rel="stylesheet" />
+
+    <!-- Metis Menu Css -->
+    <link href="../../assets/plugins/metisMenu/dist/metisMenu.css" rel="stylesheet" />
+
+    <!-- Pace Loader Css -->
+    <link href="../../assets/plugins/pace/themes/white/pace-theme-flash.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../assets/css/themes/allthemes.css" rel="stylesheet" />
+
+    <!-- Demo Purpose Only -->
+    <link href="../../assets/css/demo/setting-box.css" rel="stylesheet" />
+
+    <style type="text/css">
+       .circle {
+                margin: 2rem auto 0 auto;
+                position: relative;
+                display: flex;
+                text-align: center;
+                width: 100%;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+        .b {
+                border-bottom: 2px solid grey;
+                width: 100px;
+                margin: 0 5px 7px 5px;
+            }
+    </style>
+</head>
+<body style="background-color: #ADFF2F;">
+<!-- <body style="background: rgb(222,237,71);
+background: linear-gradient(90deg, rgba(222,237,71,1) 33%, rgba(0,212,255,1) 100%);"> -->
+
+<div class="circle">
+    <span class="badge" style="border-radius: 100%; background-color: purple;">1</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%; background-color: purple;">2</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%;">3</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%;">4</span>
+</div>
+<div class="panel panel-default" style="margin-top: 20px;">
+                    <div class="panel-heading">
+                       
+                    </div>
+<div class="container">
+    <form class="form-horizontal" id="otherskill" method="post" action="/expert/otherskill/<%=result._id%>" class="card-body" tabindex="500">
+                            <div class="form-group">
+                                
+                            </div>
+                            <div class="form-group">
+                               
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                     <label><b>Why do you think we should onboard you? </b></label>
+                        <input type="text" class="form-control" placeholder="Why we should onboard you?" name="onboard" id="onboard" required />
+                                </div>
+
+                                <div class="col-sm-4">
+                                     <label><b>What is a suitable time for interview? </b></label>
+                        <input type="text" class="form-control" placeholder="Enter suitable Time for an interview" name="interview_time" id="interview_time" required />
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>Which City do you currently live in?</b></label>
+                        <input type="text" class="form-control" placeholder="City" name="live_city" id="live_city" required />
+                                
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    
+                                    <label><b>Main Source of business(other than astrology)?</b></label>
+                            <select class="form-control" name="business_source" >
+                            <option>Own business</option>
+                            <option>Private Job</option>
+                            <option>Goverment Job</option>
+                            <option>Styding in college</option>
+                            <option>None of the above</option>
+                            
+                        </select>
+                                
+                                
+                         </div>
+                        <div class="col-sm-4">
+                                    
+                        <label><b>Select your highest qualification</b></label>
+                        <select class="form-control" name="highest_qualification" >
+                            <option>Diploma</option>
+                            <option>10th</option>
+                            <option>12th</option>
+                            <option>Graduated</option>
+                            <option>Post Graduate</option>
+                            <option>PHD</option>
+                            <option>Bengali</option>
+                            <option>French</option>
+                        </select>
+                                
+                                
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>Degree/Diploma</b></label>
+                             <select class="form-control" name="degree_diploma" >
+                            <option>B.tech</option>
+                            <option>B.Sc</option>
+                            <option>B.A</option>
+                            <option>B.E</option>
+                            <option>B.Com</option>
+                            <option>B.Pharma</option>
+                            <option>M.tech</option>
+                            <option>MBBS</option>
+                        </select>
+                                </div>
+                                
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label><b>College/School/University</b></label>
+                        <input type="text" class="form-control" placeholder="Enter your college/school/University Name" name="college_name" id="college_name" required />
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>From where did you learn Astrology?</b></label>
+                        <input type="text" class="form-control" placeholder="where Did you learn an Astrology?" name="astrologer_learing" id="astrologer_learing" required />
+                                </div>
+                                <div class="col-sm-4">
+                                     <label><b>Instgram Profile Link</b></label>
+                        <input type="text" class="form-control" placeholder="Please let us know your Instagram Profile" name="instagram_link" id="instagram_link" required />
+                                     </div>
+                                </div>
+
+                                <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label><b>Facebook Profile Link</b></label>
+                        <input type="text" class="form-control" placeholder="Please let us know your Facebook Profile" name="facebook_link" id="facebook_link" required />
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>Linkedln Profile Link</b></label>
+                        <input type="text" class="form-control" placeholder="Please let us know your Facebook Profile" name="linkedin_link" id="linkedin_link" required />
+                                </div>
+                                <div class="col-sm-4">
+                                     <label><b>Youtube Profile Link</b></label>
+                        <input type="text" class="form-control" placeholder="Please let us know your Youtube Profile" name="youtube_link" id="youtube_link" required />
+                                     </div>
+                                </div>
+                                
+                              <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label><b>Website Profile Link</b></label>
+                        <input type="text" class="form-control" placeholder="Please let us know your website Profile" name="website_link" id="website_link" required />
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>Minimum Earning Expectation From Nakshatratalk</b></label>
+                        <input type="text" class="form-control" placeholder="Minimum monthly earning Expectation" name="minimum_earning" id="minimum_earning" required />
+                                </div>
+                                <div class="col-sm-4">
+                                     <label><b>Maximum Earning Expectation From Nakshatratalk</b></label>
+                        <input type="text" class="form-control" placeholder="Minimum monthly earning Expectation" name="maximum_earning" id="maximum_earning" required />
+                                     </div>
+                                </div>    
+                                <div class="form-group">
+                                <div class="col-sm-8">
+                                    <label><b>Long Bio</b></label>
+                       
+                          <textarea class="form-control no-resize" cols="8" rows="5" placeholder="Please type what you want..." name="long_bio"></textarea>
+                                </div>
+                               <div class="col-sm-4">
+                                    <label><b>Did anybody refer you to Astrotalk? </b></label><br>
+                        <input type="radio" id="refer" name="refer" value="yes"> Yes
+                        <input type="radio" id="refer" name="refer" value="no"> No
+                                   
+                                </div> 
+                               
+                                
+                               
+                                
+                            </div>
+                            </div>
+                          
+                         
+
+                            
+
+                              <div class="form-group">
+                                <div class="col-sm-2">
+                                   
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-primary btn-block btn-flat" style="border-radius: 20px; "><a href="/expert/skil" target="" style="color: white;">Back</button> </a>
+                                </div>
+                                 <div class="col-sm-4">
+                                <button type="submit" class="btn btn-primary btn-block btn-flat" style="border-radius: 20px; "><a  target="" style="color: white;" value="otherskill"> Next</button> </a>
+                                </div>
+                                <div class="col-sm-2">
+                                   
+                                </div>
+                            </div>
+                        </form>
+</div>
+
+    <!-- Jquery Core Js -->
+    <!-- <script src="../../assets/plugins/jquery/dist/jquery.min.js"></script> -->
+
+    <!-- Bootstrap Core Js -->
+    <script src="../../assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Pace Loader Js -->
+    <script src="../../assets/plugins/pace/pace.js"></script>
+
+    <!-- Screenfull Js -->
+    <script src="../../assets/plugins/screenfull/src/screenfull.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="../../assets/plugins/metisMenu/dist/metisMenu.js"></script>
+
+    <!-- Jquery Slimscroll Js -->
+    <script src="../../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Switchery Js -->
+    <script src="../../assets/plugins/switchery/dist/switchery.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../assets/js/admin.js"></script>
+    <script src="../../assets/js/pages/examples/blank-page.js"></script>
+
+    <!-- Google Analytics Code -->
+    <script src="../../assets/js/google-analytics.js"></script>
+
+    <!-- Demo Purpose Only -->
+    <script src="../../assets/js/demo.js"></script>
+</body>
+
+<!-- Mirrored from adminbsb-sensitive.firebaseapp.com/pages/examples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 09:50:30 GMT -->
+</html>

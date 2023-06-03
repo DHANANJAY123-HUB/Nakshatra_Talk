@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from adminbsb-sensitive.firebaseapp.com/pages/examples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 09:50:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>skills</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../assets/plugins/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Animate.css Css -->
+    <link href="../../assets/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Font Awesome Css -->
+    <link href="../../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- iCheck Css -->
+    <link href="../../assets/plugins/iCheck/skins/flat/_all.css" rel="stylesheet" />
+
+    <!-- Switchery Css -->
+    <link href="../../assets/plugins/switchery/dist/switchery.css" rel="stylesheet" />
+
+    <!-- Metis Menu Css -->
+    <link href="../../assets/plugins/metisMenu/dist/metisMenu.css" rel="stylesheet" />
+
+    <!-- Pace Loader Css -->
+    <link href="../../assets/plugins/pace/themes/white/pace-theme-flash.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="../../assets/css/themes/allthemes.css" rel="stylesheet" />
+
+    <!-- Demo Purpose Only -->
+    <link href="../../assets/css/demo/setting-box.css" rel="stylesheet" />
+
+    <style type="text/css">
+       .circle {
+                margin: 2rem auto 0 auto;
+                position: relative;
+                display: flex;
+                text-align: center;
+                width: 100%;
+                flex-wrap: nowrap;
+                justify-content: center;
+            }
+        .b {
+                border-bottom: 2px solid grey;
+                width: 100px;
+                margin: 0 5px 7px 5px;
+            }
+    </style>
+</head>
+<body style="background-color: #ADFF2F;">
+<!-- <body style="background: rgb(222,237,71);
+background: linear-gradient(90deg, rgba(222,237,71,1) 33%, rgba(0,212,255,1) 100%);"> -->
+
+<div class="circle">
+    <span class="badge" style="border-radius: 100%; background-color: purple;">1</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%; background-color: purple;">2</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%; background-color: purple;">3</span>
+    <span class="b"></span>
+    <span class="badge" style="border-radius: 100%;">4</span>
+</div>
+<div class="panel panel-default" style="margin-top: 30px;">
+                    <div class="panel-heading">
+                       
+                    </div>
+<div class="container">
+        <form class="form-horizontal" id="assignment" method="post" action="/expert/assignment/<%=result._id%>" class="card-body" tabindex="500">
+
+                            <div class="form-group">
+                               
+                            </div>
+                            <div class="form-group">
+                               
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-4">
+                                    <label><b>Number of the foreign countries you lived/travelled to?</b></label>
+                                    <input type="number" placeholder="0" class="form-control focused" name="live_countries"/>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>Are you currently working a fulltime job?</b></label>
+                                    <select class="form-control" name="working_details" >
+                            <option>Yes,I am working somewhere already as a full-timer</option>
+                            <option>No,I am not working anywhere else</option>
+                            <option>No,I am working as apart-timer or freelancer</option>
+                            <option>I own a business</option>
+                            
+                            
+                        </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label><b>What are some good qualities of a perfect astrologer?</b></label>
+                                    <input type="text" placeholder="Please let us know your throughts" class="form-control" name="qualities" />
+                                </div>
+                            </div>
+
+                              <div class="form-group">
+                                <div class="col-sm-6">
+                                    <label><b>What was the biggest challenge you faced and how did you overcome it?</b></label>
+                                   
+                                    <textarea class="form-control no-resize" cols="8" rows="4" placeholder="Write a challenge you faced in brief" name="challenge"></textarea>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label><b>A customer is asking the same question repeatedly: what will you do?</b></label>
+                                   
+                                    <textarea class="form-control no-resize" cols="8" rows="4" placeholder="Please let us know in brief" name="some_question"></textarea>
+                                </div>
+                            </div>
+
+                              <div class="form-group">
+                                <div class="col-sm-2">
+                                   
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-primary btn-block btn-flat" style="border-radius: 20px; "><a href="/expert/otherskill" target="" style="color: white;">Back</button> </a>
+                                </div>
+                                 <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-primary btn-block btn-flat" style="border-radius: 20px; "><a  target="" style="color: white;" value="assignment" >Submit</button> </a>
+                                </div>
+                                <div class="col-sm-2">
+                                   
+                                </div>
+                            </div>
+
+                        </form>
+</div>
+</div>
+    <!-- Jquery Core Js -->
+    <!-- <script src="../../assets/plugins/jquery/dist/jquery.min.js"></script> -->
+
+    <!-- Bootstrap Core Js -->
+    <script src="../../assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Pace Loader Js -->
+    <script src="../../assets/plugins/pace/pace.js"></script>
+
+    <!-- Screenfull Js -->
+    <script src="../../assets/plugins/screenfull/src/screenfull.js"></script>
+
+    <!-- Metis Menu Js -->
+    <script src="../../assets/plugins/metisMenu/dist/metisMenu.js"></script>
+
+    <!-- Jquery Slimscroll Js -->
+    <script src="../../assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Switchery Js -->
+    <script src="../../assets/plugins/switchery/dist/switchery.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../assets/js/admin.js"></script>
+    <script src="../../assets/js/pages/examples/blank-page.js"></script>
+
+    <!-- Google Analytics Code -->
+    <script src="../../assets/js/google-analytics.js"></script>
+
+    <!-- Demo Purpose Only -->
+    <script src="../../assets/js/demo.js"></script>
+</body>
+
+<!-- Mirrored from adminbsb-sensitive.firebaseapp.com/pages/examples/blank-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 09:50:30 GMT -->
+</html>

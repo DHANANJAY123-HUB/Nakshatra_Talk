@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from adminbsb-sensitive.firebaseapp.com/pages/examples/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 09:50:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign Up | Nakshtratalk</title>
+    <!-- Favicon -->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" />
+
+    <!-- Bootstrap Core Css -->
+    <link href="../../assets/plugins/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Font Awesome Css -->
+    <link href="../../assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
+    <!-- iCheck Css -->
+    <link href="../../assets/plugins/iCheck/skins/square/_all.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../assets/css/style.css" rel="stylesheet" />
+</head>
+<!-- <body class="sign-up-page" style="background: rgb(222,237,71);
+background: linear-gradient(90deg, rgba(222,237,71,1) 33%, rgba(0,212,255,1) 100%);"> -->
+<body class="sign-up-page" style="background: #E7EBEE;background: #E7EBEE 100%;">
+
+    <div class="signup-form-area">
+      
+        <div class="row padding-15">
+            <div class="col-sm-2 col-md-2 col-lg-6"></div>
+            <div class="col-sm-8 col-md-8 col-lg-4" style="background-color: white; border-radius: 20px;">
+                  <h1><b>Nakshtratalk</b></h1>
+        <div class="signup-top-info">Register a new Astrologer</div>
+
+                      <font color="blue" style="font-size:15px;"><%=output%></font>
+                
+                <form id="Sign_up" method="post"  action="/admin/sign_up" class="card-body" tabindex="500">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Full Name" name="name" id="name" required />
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="email" class="form-control" placeholder="Email" name="email" id="email" required />
+                        <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control" placeholder="Mobile" name="mobile_no" id="mobile_no" required />
+                        <span class="glyphicon glyphicon-phone form-control-feedback"></span>
+                    </div>
+                   <!--  <div class="form-group has-feedback">
+                        <input type="password" class="form-control" placeholder="Password" minlength="4" name="Password" id="Password" required />
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div>
+                    <div class="form-group has-feedback">
+                        <input type="password" class="form-control" placeholder="Confirm Password" minlength="4" name="ConfirmPassword" id="ConfirmPassword" required />
+                        <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                    </div> -->
+                    <div class="form-group">
+                        <div class="checkbox icheck m-l-20">
+                            <label><input type="checkbox" name="Terms" class="Terms" required> I read and agree to the <a data-toggle="modal" data-target="#termsModal">terms of usage</a></label>
+                        </div>
+                    </div>
+                    <div>
+                         <button class="btn btn-primary btn-block btn-flat" style="border-radius: 20px; "><a  style="color: white;" value="get_otp">Get OTP</a></button> 
+                    </div>
+                </form>
+                <div class="social-media-area">
+                    <span>OR</span>
+                    <ul>
+                        <!-- <li>
+                            <a href="javascript:void(0);" class="facebook" data-toggle="tooltip" data-title="Facebook"><i class="fa fa-facebook"></i></a>
+                        </li> -->
+                       <!--  <li>
+                            <a href="javascript:void(0);" class="twitter" data-toggle="tooltip" data-title="Twitter"><i class="fa fa-twitter"></i></a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="javascript:void(0);" class="google-plus" data-toggle="tooltip" data-title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                        </li> -->
+                    </ul>
+                    <div class="">
+                    <a href="/admin/sign_in"><i class="fa fa-user-circle-o m-r-5"></i>You already have a membership please login?</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-4"></div>
+        </div>
+    </div>
+   <!--  <div class="signup-right-image">
+        <div class="background-layer"></div>
+        <div class="copyright-info">
+            This photo taken from <b>Unsplash.com</b>
+            <p><b>&copy; 2016-2017 AdminBSB - Sensitive</b>. All rights reserved.</p>
+        </div>
+    </div> -->
+    
+
+    <!-- Terms of Usage Modal -->
+   
+
+    <!-- Jquery Core Js -->
+    <script src="../../assets/plugins/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="../../assets/plugins/bootstrap/dist/js/bootstrap.js"></script>
+
+    <!-- iCheck Js -->
+    <script src="../../assets/plugins/iCheck/icheck.js"></script>
+
+    <!-- Jquery Validation Js -->
+    <script src="../../assets/plugins/jquery-validation/dist/jquery.validate.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../assets/js/pages/examples/signup.js"></script>
+</body>
+
+<!-- Mirrored from adminbsb-sensitive.firebaseapp.com/pages/examples/sign-up.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Sep 2022 09:50:30 GMT -->
+</html>
